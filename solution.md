@@ -37,7 +37,7 @@
       final marks = student['marks'] as List<int>;
       int sum = 0;
     for (var mark in marks) {
-      sum += rating;
+      sum += mark;
     }
   }
 ```
