@@ -1,33 +1,27 @@
-# TASK-NAME
+# Nested Maps, Help The Professor 🙇‍♂️
 
-This is the template for tasks. These repos are the starting points and instructions for students to explore a concept.
+Given the following list of students:
 
-## Instructions
-- Fork and clone [this repository](https://github.com/JoinCODED/{REPO_NAME}) to your `Development` folder.
+```dart
+void main() {
+  var students = [
+    {
+      'name': 'omar',
+      'major': 'engineering',
+      'marks': [75, 83, 70, 74, 88],
+    },
+    {
+      'name': 'mohammad',
+      'major': 'medicine',
+      'marks': [95, 82, 89, 98, 85],
+    },
+    {
+      'name': 'salem',
+      'major': 'literature',
+      'marks': [60, 80, 67, 55, 77],
+    },
+  ];
+}
+```
 
-## Objective and end result
-- Write the objective of the task.
-- If there are any images, make sure you resize them to around 880px maximum width. **Don't add big images**
-
-![screenshot](https://tenor.com/xNjE.gif)
-
-
-### 🍋 The basic challenge title
-
-- Step 1
-- Step 2
-- Step 3
-
-
-### 🤼‍♂️ The hard challenge title
-
-- Step 1
-- Step 2
-- Step 3
-
-
-### 🌶 The Extreme challenge title 
-
-- Step 1
-- Step 2
-- Step 3
+The professor wants to calculate the average mark for each student, and then adds it as an `'average': value` key-value pair for that student.
