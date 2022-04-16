@@ -4,7 +4,7 @@ Given the following list of students:
 
 ```dart
 void main() {
-  var students = [
+  List<Map<String,dynamic>> students = [
     {
       'name': 'omar',
       'major': 'engineering',
