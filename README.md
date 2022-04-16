@@ -1,5 +1,3 @@
-# Nested Maps, Help The Professor 🙇‍♂️
-
 Given the following list of students:
 
 ```dart
