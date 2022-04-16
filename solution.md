@@ -1,14 +1,14 @@
 1. First let's iterate over our `list` of `students`:
 
 ```dart
-  for (var student in students) {
+  for (Map<String,dynamic> student in students) {
   }
 ```
 
 2. Now create a variable for `marks` and extract the `marks` list for each `student`:
 
 ```dart
-  for (var student in students) {
+  for (Map<String,dynamic> student in students) {
       final marks = student['marks'];
   }
 ```
@@ -16,7 +16,7 @@
 3. We need to tell dart that this is a list of integers using the `as` keyword:
 
 ```dart
-  for (var student in students) {
+  for (Map<String,dynamic> student in students) {
       final marks = student['marks'] as List<int>;
   }
 ```
@@ -24,7 +24,7 @@
 4. Create a variable to store the sum of all marks:
 
 ```dart
-  for (var student in students) {
+  for (Map<String,dynamic> student in students) {
       final marks = student['marks'] as List<int>;
       int sum = 0;
   }
@@ -33,10 +33,10 @@
 5. Loop over the list of `marks` and sum all elements:
 
 ```dart
-  for (var student in students) {
+  for (Map<String,dynamic> student in students) {
       final marks = student['marks'] as List<int>;
       int sum = 0;
-    for (var mark in marks) {
+    for (int mark in marks) {
       sum += mark;
     }
   }
@@ -58,7 +58,7 @@ student['average'] = average;
 
 ```dart
 void main() {
-  var students = [
+  List<Map<String,dynamic>> students = [
     {
       'name': 'omar',
       'major': 'engineering',
@@ -76,16 +76,15 @@ void main() {
     },
   ];
 
-    for (var student in students) {
+    for (Map<String,dynamic> student in students) {
       final marks = student['marks'] as List<int>;
       int sum = 0;
-    for (var mark in marks) {
+    for (int mark in marks) {
       sum += mark;
     }
     final average = sum / marks.length;
     student['average'] = average;
     print(student);
   }
-
 }
 ```
